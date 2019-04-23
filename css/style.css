@@ -1,0 +1,78 @@
+/* html elements start here, in alphabetical order */
+body, div, h1, h2, main, p {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    background-color: rgb(70, 150, 2);
+    color: rgb(206, 240, 180);
+}
+
+img {
+    display: block;
+    height: 200px;
+    margin: 0 auto;
+    object-fit: scale-down;
+    width: 200px;
+}
+
+main {
+    margin: 0 auto;
+    width: 960px;
+}
+
+/* classes start here, same order */
+.alert {
+    background-color: rgb(200, 42, 0);
+}
+
+.delete {
+    background-color: rgb(200, 42, 0);
+    border-radius: 8px;
+    color: rgb(240, 240, 240);
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    width: 80px;
+}
+
+.delete:hover {
+    background-color: rgb(224, 120, 60);
+}
+
+.filename {
+    text-align: center;
+}
+
+.image {
+    background-color: rgb(206, 240, 180);
+    display: inline-block;
+    margin: 10px;
+    width: 300px;
+}
+
+.success {
+    background-color: rgb(70, 150, 2);
+}
+
+/* ids start here, same order */
+#cta {
+    background-color: rgb(206, 240, 180);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+}
+
+#msg {
+    border-radius: 10px;
+    color: rgb(240, 240, 240);
+    display: fixed;
+    margin: 10px;
+    text-align: center;
+}
