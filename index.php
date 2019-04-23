@@ -73,7 +73,7 @@
         <?php if (!empty($msg)) {echo "<p id='msg' class='{$msg_class}'>{$msg}</p>";} ?>
         <section id="cta"> <!-- for "call-to-action" -->
             <h2>Uploading images has never been more satisfying. Just simply Browse to select an image file, then Upload it!</h2>
-            <form action="" method="post" enctype="multipart/form-data">
+            <form action="<?=htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post" enctype="multipart/form-data">
                 <input type="hidden" name="MAX_FILE_SIZE" value="2097152">
                 <input type="file" name="image_file">
                 <input type="submit" value="Upload">
@@ -84,7 +84,7 @@
                 foreach (scandir($upload_dir) as $image) {
                     if (!is_dir($image)) {
                         echo "<div class='image'>";
-                        echo "<img src='{$upload_dir}/{$image}'>";
+                        echo "<img src='{$upload_dir}/{$image}' alt='{$image}'>";
                         echo "<p class='filename'>{$image}</p>";
                         echo "<a href='?del={$upload_dir}/{$image}' class='delete'>Delete</a>";
                         echo "</div>";
