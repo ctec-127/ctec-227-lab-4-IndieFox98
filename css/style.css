@@ -8,6 +8,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+footer {
+    background-color: rgb(206, 240, 180);
+    border-radius: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
 header {
     background-color: rgb(70, 150, 2);
     color: rgb(206, 240, 180);
@@ -74,4 +81,39 @@ main {
     color: rgb(240, 240, 240);
     margin: 10px;
     text-align: center;
+}
+
+/* media queries start here */
+@media (max-width: 319px) {
+    main, .image {
+        width: 100%;
+    }
+
+    #cta {
+        font-size: 12px;
+    }
+
+    #tagline {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 639px) {
+    main {
+        width: 320px;
+    }
+    
+    #cta {
+        font-size: 12px;
+    }
+
+    #tagline {
+        display: none;
+    }
+}
+
+@media (min-width: 640px) and (max-width: 959px) {
+    main {
+        width: 640px;
+    }
 }

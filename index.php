@@ -67,7 +67,7 @@
 </head>
 <body>
     <header>
-        <h1>imgload - the latest image uploader</h1>
+        <h1>imgload <span id="tagline">- the latest image uploader</span></h1>
     </header>
     <main>
         <?php if (!empty($msg)) {echo "<p id='msg' class='{$msg_class}'>{$msg}</p>";} ?>
@@ -94,6 +94,9 @@
                 echo "<p>No images have been uploaded. Don't be shy, rookie!</p>";
             }
         ?>
+        <footer>
+            <p>&copy; 2019 Torin Tashima</p>
+        </footer>
     </main>
 </body>
 </html>
